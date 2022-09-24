@@ -1,0 +1,7 @@
+import pandas as pd
+data = pd.read_csv('/datasets/real_estate_data.csv') 
+data = pd.read_csv('/datasets/real_estate_data.csv',sep = '\t')
+print(data.head())
+data.info()
+data.hist(figsize=(15, 20))
+data.isna().sum()
